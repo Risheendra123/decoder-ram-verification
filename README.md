@@ -38,24 +38,7 @@ A class-based SystemVerilog verification environment for a **128 x 8-bit decoder
 
 ---
 
-## Testbench Architecture
 
-```
-            +-----------------------------------------------+
-            |                  environment                  |
-            |                                               |
-  tests --> |  wr_driver --+                +-- wr_monitor  |
- (mailbox)  |              v                |       |       |
-            |             [ interface ram_inf ] --> DUT     |
-            |              ^                |       |       |
-            |  rd_driver --+                +-- rd_monitor  |
-            |                                   |     |     |
-            |                                   v     v     |
-            |                          ref_model --> scoreboard
-            +-----------------------------------------------+
-```
-
----
 
 ## File Structure
 
